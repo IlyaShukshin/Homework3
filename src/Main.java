@@ -104,20 +104,16 @@ public class Main {
         double mashaBefore = masha * months;
         double mashaAfter = mashaRaise * months;
         double mashaDifference = mashaAfter - mashaBefore;
-
         double denisRaise = denis * 0.1 + denis;
         double denisBefore = denis * months;
         double denisAfter = denisRaise * months;
         double denisDifference = denisAfter - denisBefore;
-
         double cristinaRaice = cristina * 0.1 + cristina;
         double cristinaBefore = cristina * months;
         double cristinaAfter = cristinaRaice * months;
         double cristinaDifference = cristinaAfter - cristinaBefore;
-
         System.out.println("Маша теперь получает " + mashaRaise + " рублей. Годовой доход вырос на " + mashaDifference + " рублей");
         System.out.println("Денис теперь получет " + denisRaise + " рублей. Годовой доход вырос на " + denisDifference + " рублей");
         System.out.println("Кристина теперь получает " + cristinaRaice + " рублей. Годовой доход вырос на " + cristinaDifference + " рублей");
-
     }
 }
