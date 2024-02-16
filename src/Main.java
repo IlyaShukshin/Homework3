@@ -45,7 +45,6 @@ public class Main {
 
         System.out.println("Задача №4");
         // Производительность машины для изготовления бутылок — 16 бутылок за 2 минуты. Какая производительность машины будет:
-        //
         //за 20 минут,
         //в сутки,
         //за 3 дня,
@@ -101,6 +100,60 @@ public class Main {
         float grPerKg = weightBreakfast / 1000f;
         System.out.println("Вес завтрака в граммах " + weightBreakfast);
         System.out.println("Вес завтрака в килограммах " + grPerKg);
+
+        System.out.println("Здача №7");
+//Правила соревнований обновились, и спортсмену, чтобы оставаться в своей весовой категории, нужно сбросить 7 кг.
+// Тренер скорректировал рацион так, чтобы спортсмен мог терять в весе от 250 до 500 грамм в день.
+//Посчитайте, сколько дней уйдет на похудение, если спортсмен будет терять каждый день по 250 грамм, а сколько — если каждый день будет худеть на 500 грамм.
+//Посчитайте, сколько может потребоваться дней в среднем, чтобы добиться результата похудения.
+//Результаты всех подсчетов выведите в консоль.
+        short objective = 7000;
+        short grDay1 = 250;
+        short grDay2 = 500;
+        int decreaseDay1 = objective / grDay1;
+        int decreaseDay2 = objective / grDay2;
+        int averageDay = (decreaseDay1 + decreaseDay2) / 2;
+
+        System.out.println("Если спортсмен будет худеть каждый день на 250гр, то это займёт " + decreaseDay1 + " дней");
+        System.out.println("Если спортсмен будет худеть каждый день на 500гр, то это займёт " + decreaseDay2 + " дней");
+        System.out.println("В среднем для достижения результата потребуется " + averageDay + " день");
+
+        System.out.println("Задача №8");
+//К вам пришел руководитель с задачей автоматизировать повышение зарплаты, а также провести расчет для следующих сотрудников:
+//Маша получает 67 760 рублей в месяц.
+//Денис получает 83 690 рублей в месяц.
+//Кристина получает 76 230 рублей в месяц.
+//Каждому нужно увеличить зарплату на 10% от текущей месячной.
+// Дополнительно руководитель попросил посчитать разницу между годовым доходом с нынешней зарплатой и после повышения.
+//Посчитайте, сколько будет получать каждый из сотрудников, а также разницу между годовым доходом до и после повышения.
+//Выведите в консоль информацию по каждому сотруднику. Например: «Маша теперь получает ... рублей. Годовой доход вырос на ... рублей».
+        int masha = 67760;
+        int denis = 83690;
+        int cristina = 76230;
+        int months = 12;
+        double mashaRaise = masha * 0.1 + masha;
+        double mashaBefore = masha * months;
+        double mashaAfter = mashaRaise * months;
+        double mashaDifference = mashaAfter - mashaBefore;
+
+        double denisRaise = denis * 0.1 + denis;
+        double denisBefore = denis * months;
+        double denisAfter = denisRaise * months;
+        double denisDifference = denisAfter - denisBefore;
+
+        double cristinaRaice = cristina * 0.1 + cristina;
+        double cristinaBefore = cristina * months;
+        double cristinaAfter = cristinaRaice * months;
+        double cristinaDifference = cristinaAfter - cristinaBefore;
+
+        System.out.println("Маша теперь получает " + mashaRaise + " рублей. Годовой доход вырос на " + mashaDifference + " рублей");
+        System.out.println("Денис теперь получет " + denisRaise + " рублей. Годовой доход вырос на " + denisDifference + " рублей");
+        System.out.println("Кристина теперь получает " + cristinaRaice + " рублей. Годовой доход вырос на " + cristinaDifference + " рублей");
+
+
+
+
+
 
 
 
