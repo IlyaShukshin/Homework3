@@ -83,6 +83,26 @@ public class Main {
 
         System.out.println("Задача №6");
 
+        int banana = 5;
+        int weightOneBanana = 80;
+        int milk = 2;
+        int wightMilk = 105;
+        int iceCream = 2;
+        int weightIceCream = 100;
+        int aggs = 4;
+        int weightAggs = 70;
+
+        int bananaGr = banana * weightOneBanana;
+        int milkGr = milk * wightMilk;
+        int iceCreamGr = iceCream * weightIceCream;
+        int aggsGr = aggs * weightAggs;
+
+        int weightBreakfast = bananaGr + milkGr + iceCreamGr + aggsGr;
+        float grPerKg = weightBreakfast / 1000f;
+        System.out.println("Вес завтрака в граммах " + weightBreakfast);
+        System.out.println("Вес завтрака в килограммах " + grPerKg);
+
+
 
     }
 }
